@@ -6,4 +6,6 @@
 - 😄 代词：He/Him
 - ⚡ 有趣的事实：我喜欢在空闲时间玩电子游戏和音游。
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=flhcx)](https://github.com/anuraghazra/github-readme-stats&theme=gruvbox)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=flhcx&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=flhcx&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
