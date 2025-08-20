@@ -1,29 +1,33 @@
-name: Generate Snake Animation
+# GitHub Action for generating a contribution graph with a snake eating your contributions.
+
+name: Generate Snake
 
 on:
   schedule:
-    # Runs at 00:00 UTC every day
     - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
-  generate:
+  build:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
 
-      - name: Generate snake animation
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Generate Snake
         uses: Platane/snk@v3
+        id: snake-gif
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            dist/github-contribution-grid-snake.gif?color_snake=blue&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+            ./assets/github-contribution-grid-snake.svg
+            ./assets/github-contribution-grid-snake-dark.svg?palette=github-dark
+            ./assets/github-contribution-grid-snake.gif
+            ./assets/github-contribution-grid-snake-dark.gif?palette=github-dark
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Push to GitHub
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          commit_message: 'Generate Contribution Snake'
+          branch: main
