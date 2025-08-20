@@ -13,3 +13,11 @@
 
 <!--action 统计图表:https://github.com/lowlighter/metrics/blob/master/.github/readme/partials/documentation/setup/action.md-->
 ![Metrics](/github-metrics.svg)
+
+<!--加载贪吃蛇-->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/flhcx/flhcx/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/flhcx/flhcx/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/flhcx/flhcx/output/github-contribution-grid-snake.svg">
+</picture>
+
