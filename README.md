@@ -11,8 +11,11 @@
 <!--action 统计图表:https://github.com/lowlighter/metrics/blob/master/.github/readme/partials/documentation/setup/action.md-->
 ![Metrics](/github-metrics.svg)
 
+github统计：
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=flhcx&show_icons=true&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=flhcx&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+
+
 <!--加载贪吃蛇-->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/flhcx/flhcx/output/github-contribution-grid-snake-dark.svg">
